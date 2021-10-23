@@ -1,4 +1,15 @@
 
+### Usage
+
+```
+$ docker run \
+  --rm -it -v `pwd`/demo:/data \
+  leonrinkel/cvprw2019-face-artifacts \
+  python ./demo.py --input_dir=/data
+```
+
+---
+
 ## Exposing DeepFake Videos By Detecting Face Warping Artifacts
 Yuezun Li and Siwei Lyu \
 University at Albany, State University of New York, USA \
