@@ -13,4 +13,8 @@ RUN \
 
 WORKDIR /app
 COPY . .
-RUN pip install -r requirements.txt
+
+RUN \
+  pip install --upgrade pip==20.3.4 && \
+  pip install --upgrade setuptools==44.1.1 && \
+  pip install -r requirements.txt
